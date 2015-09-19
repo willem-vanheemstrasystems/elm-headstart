@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>Game</title>
+  <script src="elm.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style>
+  body {
+	background-image: url('img/texture.png');
+	background-color: #d3d7cf;
+	font-family: "Lucida Grande","Trebuchet MS","Bitstream Vera Sans",Verdana,Helvetica,sans-serif;
+	font-size: 14px;
+  }
+  #elm-game {
+	width:  400px;
+	height: 400px;
+	background-color: white;
+	border: 1px solid #babdb6;
+  }
+  #column {
+	 width: 420px;
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+  }
+  </style>
+</head>
+<body>
+<div id="column">
+  <h1>Game</h1>
+
+  <p>This demo shows how to:</p>
+  <ol>
+	<li>embed an Elm program in HTML</li>
+	<li>send events back and forth between Elm and JavaScript</li>
+  </ol>
+  <p>The white square is an Elm program, but the rest is HTML, CSS, and JS.
+	 See the <a href="http://github.com/evancz/elm-html-and-js">source code</a>
+	 for more info.
+  </p>
+
+  <div id="elm-game"></div>
+
+  <p>There are currently <span id="current-count">0</span> stamps.
+	 <button onclick="resetGame()">Reset</button>
+  </p>
+  <p>You have created <span id="total-count">0</span> stamps in total.</p>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" />
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
+<script type="text/javascript">
+  // Show the game module in the "elm-game" div.
+  var div = document.getElementById('elm-game');
+  var game = Elm.embed(Elm.Game, div, { reset:[] });
+
+  // Reset the game in the Elm code.
+  // The value we send does not matter, we just
+  // need the event.
+  function resetGame() {
+	game.ports.reset.send([]);
+  }
+
+  // Always show the latest count, which is exported
+  // from the Game module as the 'count' event stream.
+  var currentCount = document.getElementById('current-count'),
+	  totalCount   = document.getElementById('total-count'),
+	  total        = 0;
+  game.ports.count.subscribe(function(count) {
+	  currentCount.innerHTML = count;
+	  if (count > 0) {
+		  total += 1;
+		  totalCount.innerHTML = total;
+	  }
+  });
+</script>
+
+</html>
+
