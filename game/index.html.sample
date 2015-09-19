@@ -2,7 +2,7 @@
 
 <head>
   <title>Game</title>
-  <script src="elm.js"></script>
+  <script src="game.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <style>
@@ -48,8 +48,8 @@
   <p>You have created <span id="total-count">0</span> stamps in total.</p>
 </div>
 </body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" />
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   // Show the game module in the "elm-game" div.
   var div = document.getElementById('elm-game');
