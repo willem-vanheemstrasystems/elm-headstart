@@ -1,4 +1,4 @@
-module Game where
+module APP69fe31e2e8ac41d7bb1cc7aace3eb683 where
 
 import Color exposing (..)
 import Graphics.Collage exposing (..)
@@ -42,7 +42,7 @@ scene (w,h) locs =
   in
       layers
         [ collage w h (List.map drawPentagon locs)
-        , show "Untitled"
+        , show "APP69fe..."
         ]
 
 

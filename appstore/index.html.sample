@@ -1,8 +1,8 @@
 <html>
 
 <head>
-  <title>Grid</title>
-  <script src="game.js"></script>
+  <title>AppStore</title>
+  <script src="APP69fe31e2e8ac41d7bb1cc7aace3eb683.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <style>
@@ -55,163 +55,152 @@
 </head>
 <body>
 <div id="page">
-  <h1>Grid</h1>
-
-  <p>This demo shows how to:</p>
-  <ol>
-	<li>embed an Elm program in HTML</li>
-	<li>send events back and forth between Elm and JavaScript</li>
-  </ol>
-  <p>The white square is an Elm program, but the rest is HTML, CSS, and JS.
-	 See the <a href="http://github.com/evancz/elm-html-and-js">source code</a>
-	 for more info.
-  </p>
-
   <!-- to generate guids, see https://www.guidgenerator.com/ -->
   <!-- the 'inner' class allows us to use margins around cells without breaking the grid -->
   <div class="container gutter">
   	<div class="row"><!-- row 1 -->
 	  <div class="col-sm-1">
-  		<div id="69fe31e2e8ac41d7bb1cc7aace3eb683" class="inner app phone no-placeholder"></div>
+  		<div id="APP69fe31e2e8ac41d7bb1cc7aace3eb683" class="inner app phone no-placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">
-  		<div id="b34a8d71d12642c787cbddb242ea0c9c" class="inner app phone placeholder"></div>
+  		<div id="APPb34a8d71d12642c787cbddb242ea0c9c" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  	  
-  		<div id="e9a41a26e0ba4b75935930dbc71a1448" class="inner app phone placeholder"></div>
+  		<div id="APPe9a41a26e0ba4b75935930dbc71a1448" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="511849a9e6854377863e700a99bd990f" class="inner app phone placeholder"></div>
+  		<div id="APP511849a9e6854377863e700a99bd990f" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="eb3980edf6c4428698a521e3a3921ed4" class="inner app phone placeholder"></div>
+  		<div id="APPeb3980edf6c4428698a521e3a3921ed4" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="143dd08b7ca745adb873dcb3c64c4f6f" class="inner app phone placeholder"></div>
+  		<div id="APP143dd08b7ca745adb873dcb3c64c4f6f" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="c79bd47494b747f08b2fd1223252363f" class="inner app phone placeholder"></div>
+  		<div id="APPc79bd47494b747f08b2fd1223252363f" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="ffb4b473da554f9b83c6b24c5e44102e" class="inner app phone placeholder"></div>
+  		<div id="APPffb4b473da554f9b83c6b24c5e44102e" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="5e1a7c878b034b64b04d34fe06a448aa" class="inner app phone placeholder"></div>
+  		<div id="APP5e1a7c878b034b64b04d34fe06a448aa" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="c69fc717732f4c7bb35aa66e35cb9bb3" class="inner app phone placeholder"></div>
+  		<div id="APPc69fc717732f4c7bb35aa66e35cb9bb3" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="58fc6b111a6e4c498a62871fb8a590af" class="inner app phone placeholder"></div>
+  		<div id="APP58fc6b111a6e4c498a62871fb8a590af" class="inner app phone placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  		
-  		<div id="a6b76357f43a47ff97adf16606bd426c" class="inner app phone placeholder"></div>
+  		<div id="APPa6b76357f43a47ff97adf16606bd426c" class="inner app phone placeholder"></div>
   	  </div>	
   	</div><!-- eof row 1 -->
   	<div class="row not-first-row"><!-- row 2 -->
 	  <div class="col-sm-1">
-	  	<div id="ad5b18c11eaf4ef9a92dd3fcd53d9913" class="inner app phone placeholder"></div>
+	  	<div id="APPad5b18c11eaf4ef9a92dd3fcd53d9913" class="inner app phone placeholder"></div>
 	  </div>
 		<div class="col-sm-1">
-	  <div id="87ede17a64cb4b97a04f10fa05114a9b" class="inner app phone placeholder"></div>
+	  <div id="APP87ede17a64cb4b97a04f10fa05114a9b" class="inner app phone placeholder"></div>
 		</div>
 	  <div class="col-sm-1">  	  
-		<div id="10173c4030c947f58fdaf3003f76ba11" class="inner app phone placeholder"></div>
+		<div id="APP10173c4030c947f58fdaf3003f76ba11" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-		<div id="a5a0af2251ee41deb32cfd21a6baf20b" class="inner app phone placeholder"></div>
+		<div id="APPa5a0af2251ee41deb32cfd21a6baf20b" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-		<div id="5e636f1daa0542e285695fd02acd5194" class="inner app phone placeholder"></div>
+		<div id="APP5e636f1daa0542e285695fd02acd5194" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="58d6d5825bfb4976a9135e64392585b2" class="inner app phone placeholder"></div>
+	  	<div id="APP58d6d5825bfb4976a9135e64392585b2" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="44f813c00f1e42d38d552cfcad045d32" class="inner app phone placeholder"></div>
+	  	<div id="APP44f813c00f1e42d38d552cfcad045d32" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="98cec5ff44184e4e8fd17223526ce1fe" class="inner app phone placeholder"></div>
+	  	<div id="APP98cec5ff44184e4e8fd17223526ce1fe" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="0585dc76cf2d4550b969bca78edd080e" class="inner app phone placeholder"></div>
+	  	<div id="APP0585dc76cf2d4550b969bca78edd080e" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="1743af9510514bee98826813b7ff64d0" class="inner app phone placeholder"></div>
+	  	<div id="APP1743af9510514bee98826813b7ff64d0" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="b414c53e9cac4853a8a7f0f09010e569" class="inner app phone placeholder"></div>
+	  	<div id="APPb414c53e9cac4853a8a7f0f09010e569" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="3d4e56c4093b4477bd63d53f3e1bef4f" class="inner app phone placeholder"></div>
+	  	<div id="APP3d4e56c4093b4477bd63d53f3e1bef4f" class="inner app phone placeholder"></div>
 	  </div>
   	</div><!-- eof row 2 -->
   	<div class="row not-first-row"><!-- row 3 -->
 	  <div class="col-sm-1">
-	  	<div id="890f42c23fb640bd860233a4accbe633" class="inner app phone placeholder"></div>
+	  	<div id="APP890f42c23fb640bd860233a4accbe633" class="inner app phone placeholder"></div>
 	  </div>
 		<div class="col-sm-1">
-	  <div id="616bb7e9caf84ac7994adab0f3c0edab" class="inner app phone placeholder"></div>
+	  <div id="APP616bb7e9caf84ac7994adab0f3c0edab" class="inner app phone placeholder"></div>
 		</div>
 	  <div class="col-sm-1">  	  
-		<div id="9e530dd2584843b683d93a9ff1c12561" class="inner app phone placeholder"></div>
+		<div id="APP9e530dd2584843b683d93a9ff1c12561" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-		<div id="6bd5888d88d74759b9b685951491f083" class="inner app phone placeholder"></div>
+		<div id="APP6bd5888d88d74759b9b685951491f083" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-		<div id="5955bf0c4cf44128b4b67841846ab4cb" class="inner app phone placeholder"></div>
+		<div id="APP5955bf0c4cf44128b4b67841846ab4cb" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="235033d8e8704a7da05c671419eb35d6" class="inner app phone placeholder"></div>
+	  	<div id="APP235033d8e8704a7da05c671419eb35d6" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="5ce01100a7b34534b687e27b0dc11ad1" class="inner app phone placeholder"></div>
+	  	<div id="APP5ce01100a7b34534b687e27b0dc11ad1" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="ba1f3f8aef8c4c8eb1fbdbb9ca3f76fc" class="inner app phone placeholder"></div>
+	  	<div id="APPba1f3f8aef8c4c8eb1fbdbb9ca3f76fc" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="07224224c12f47fa89fa05a286a03d39" class="inner app phone placeholder"></div>
+	  	<div id="APP07224224c12f47fa89fa05a286a03d39" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="220553bc73654082bf5c4061357bef65" class="inner app phone placeholder"></div>
+	  	<div id="APP220553bc73654082bf5c4061357bef65" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="e8e08562b4544a768c40fad998fc457e" class="inner app phone placeholder"></div>
+	  	<div id="APPe8e08562b4544a768c40fad998fc457e" class="inner app phone placeholder"></div>
 	  </div>
 	  <div class="col-sm-1">  		
-	  	<div id="e8cbf4f465774118bc794abc78eb322a" class="inner app phone placeholder"></div>
+	  	<div id="APPe8cbf4f465774118bc794abc78eb322a" class="inner app phone placeholder"></div>
 	  </div>	
   	</div><!-- eof row 3 -->
-</div><!-- eof container -->
-
-  <p>There are currently <span id="current-count">0</span> stamps.
-	 <button onclick="resetGame()">Reset</button>
-  </p>
-  <p>You have created <span id="total-count">0</span> stamps in total.</p>
+  </div><!-- eof container -->
+  <div class="container">
+	<p>There are currently <span id="current-count">0</span> stamps.
+	  <button onclick="resetApp()">Reset</button>
+	</p>
+	<p>You have created <span id="total-count">0</span> stamps in total.</p>
+  <div><!-- eof container -->
 </div><!-- eof page -->
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" /></script>
 <script type="text/javascript">
-  // Show the game module in the "69fe31e2e8ac41d7bb1cc7aace3eb683" div.
-  var div = document.getElementById('69fe31e2e8ac41d7bb1cc7aace3eb683');
-  var game = Elm.embed(Elm.Game, div, { reset:[] });
+  // Show the app module in the "APP69fe31e2e8ac41d7bb1cc7aace3eb683" div.
+  var div = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683');
+  var app = Elm.embed(Elm.APP69fe31e2e8ac41d7bb1cc7aace3eb683, div, { reset:[] });
 
-  // Reset the game in the Elm code.
+  // Reset the app in the Elm code.
   // The value we send does not matter, we just
   // need the event.
-  function resetGame() {
-	game.ports.reset.send([]);
+  function resetApp() {
+	app.ports.reset.send([]);
   }
 
   // Always show the latest count, which is exported
-  // from the Game module as the 'count' event stream.
+  // from the app module as the 'count' event stream.
   var currentCount = document.getElementById('current-count'),
 	  totalCount   = document.getElementById('total-count'),
 	  total        = 0;
-  game.ports.count.subscribe(function(count) {
+  app.ports.count.subscribe(function(count) {
 	  currentCount.innerHTML = count;
 	  if (count > 0) {
 		  total += 1;
@@ -221,4 +210,3 @@
 </script>
 
 </html>
-
