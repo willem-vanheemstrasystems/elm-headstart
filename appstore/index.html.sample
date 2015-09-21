@@ -3,6 +3,7 @@
 <head>
   <title>AppStore</title>
   <script src="APP69fe31e2e8ac41d7bb1cc7aace3eb683.js"></script>
+  <script src="APPb34a8d71d12642c787cbddb242ea0c9c.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <style>
@@ -63,7 +64,7 @@
   		<div id="APP69fe31e2e8ac41d7bb1cc7aace3eb683" class="inner app phone no-placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">
-  		<div id="APPb34a8d71d12642c787cbddb242ea0c9c" class="inner app phone placeholder"></div>
+  		<div id="APPb34a8d71d12642c787cbddb242ea0c9c" class="inner app phone no-placeholder"></div>
   	  </div>
   	  <div class="col-sm-1">  	  
   		<div id="APPe9a41a26e0ba4b75935930dbc71a1448" class="inner app phone placeholder"></div>
@@ -174,38 +175,71 @@
   	</div><!-- eof row 3 -->
   </div><!-- eof container -->
   <div class="container">
-	<p>There are currently <span id="current-count">0</span> stamps.
-	  <button onclick="resetApp()">Reset</button>
+	<h3>App 69fe...</h3>
+	<p>There are currently <span id="APP69fe31e2e8ac41d7bb1cc7aace3eb683-current-count">0</span> stamps.
+	  <button onclick="resetApp('APP69fe31e2e8ac41d7bb1cc7aace3eb683')">Reset</button>
 	</p>
-	<p>You have created <span id="total-count">0</span> stamps in total.</p>
+	<p>You have created <span id="APP69fe31e2e8ac41d7bb1cc7aace3eb683-total-count">0</span> stamps in total.</p>
   <div><!-- eof container -->
+  <div class="container">
+  	<h3>App b34a...</h3>
+  	<p>There are currently <span id="APPb34a8d71d12642c787cbddb242ea0c9c-current-count">0</span> stamps.
+  	  <button onclick="resetApp('APPb34a8d71d12642c787cbddb242ea0c9c')">Reset</button>
+  	</p>
+  	<p>You have created <span id="APPb34a8d71d12642c787cbddb242ea0c9c-total-count">0</span> stamps in total.</p>
+	<div><!-- eof container -->
 </div><!-- eof page -->
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" /></script>
 <script type="text/javascript">
   // Show the app module in the "APP69fe31e2e8ac41d7bb1cc7aace3eb683" div.
-  var div = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683');
-  var app = Elm.embed(Elm.APP69fe31e2e8ac41d7bb1cc7aace3eb683, div, { reset:[] });
+  var divAPP69fe31e2e8ac41d7bb1cc7aace3eb683 = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683');
+  var APP69fe31e2e8ac41d7bb1cc7aace3eb683 = Elm.embed(Elm.APP69fe31e2e8ac41d7bb1cc7aace3eb683, divAPP69fe31e2e8ac41d7bb1cc7aace3eb683, { reset:[] });
+
+  var divAPPb34a8d71d12642c787cbddb242ea0c9c = document.getElementById('APPb34a8d71d12642c787cbddb242ea0c9c');  
+  var APPb34a8d71d12642c787cbddb242ea0c9c = Elm.embed(Elm.APPb34a8d71d12642c787cbddb242ea0c9c, divAPPb34a8d71d12642c787cbddb242ea0c9c, { reset:[] });
 
   // Reset the app in the Elm code.
   // The value we send does not matter, we just
   // need the event.
-  function resetApp() {
-	app.ports.reset.send([]);
+  function resetApp(id) {
+	switch(id) {
+		case "APP69fe31e2e8ac41d7bb1cc7aace3eb683":
+			APP69fe31e2e8ac41d7bb1cc7aace3eb683.ports.reset.send([]);
+			break;
+		case "APPb34a8d71d12642c787cbddb242ea0c9c":
+			APPb34a8d71d12642c787cbddb242ea0c9c.ports.reset.send([]);
+			break;
+		default:
+			// do nothing
+	}
   }
 
-  // Always show the latest count, which is exported
-  // from the app module as the 'count' event stream.
-  var currentCount = document.getElementById('current-count'),
-	  totalCount   = document.getElementById('total-count'),
-	  total        = 0;
-  app.ports.count.subscribe(function(count) {
+  APP69fe31e2e8ac41d7bb1cc7aace3eb683.ports.count.subscribe(function(count) {
+	// Always show the latest count, which is exported
+	// from the app module as the 'count' event stream.
+	var currentCount = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683-current-count'),
+  	  totalCount   = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683-total-count'),
+  	  total        = total || 0;	  
 	  currentCount.innerHTML = count;
 	  if (count > 0) {
 		  total += 1;
 		  totalCount.innerHTML = total;
 	  }
+  });
+
+  APPb34a8d71d12642c787cbddb242ea0c9c.ports.count.subscribe(function(count) {
+	// Always show the latest count, which is exported
+	// from the app module as the 'count' event stream.
+	var currentCount = document.getElementById('APPb34a8d71d12642c787cbddb242ea0c9c-current-count'),
+	  totalCount   = document.getElementById('APPb34a8d71d12642c787cbddb242ea0c9c-total-count'),
+	  total        = total || 0;  
+  	currentCount.innerHTML = count;
+  	if (count > 0) {
+  	  total += 1;
+  	  totalCount.innerHTML = total;
+  	}
   });
 </script>
 
