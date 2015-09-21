@@ -21,7 +21,11 @@
   div .row.not-first-row {
 	margin-top: 20px;
   }
-  div .app {}
+  div .app {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+  }
   div .app.phone {
 	min-width: 38px;
 	min-height: 38px;	  
