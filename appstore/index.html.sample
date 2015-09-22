@@ -2,8 +2,8 @@
 
 <head>
   <title>AppStore</title>
-  <script src="APP69fe31e2e8ac41d7bb1cc7aace3eb683.js"></script>
-  <script src="APPb34a8d71d12642c787cbddb242ea0c9c.js"></script>
+  <script src="apps/js/APP69fe31e2e8ac41d7bb1cc7aace3eb683.js"></script>
+  <script src="apps/js/APPb34a8d71d12642c787cbddb242ea0c9c.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <style>
