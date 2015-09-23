@@ -1,4 +1,4 @@
-To compile Bingo.elm into bingo.js, type
+To compile elm/BUNDLE683682163861286312.elm into js/BUNDLE683682163861286312.js, type
 
 grunt elm
 
@@ -15,6 +15,6 @@ You should see the following output as it patiently waits for changes to the .el
 Running "watch" task
 Waiting...
 
-Make a change to your Bingo.elm file, save it, and the file should get automatically recompiled into bingo.js. Huzzah!
+Make a change to your elm/BUNDLE683682163861286312.elm file, save it, and the file should get automatically recompiled into js/BUNDLE683682163861286312.js. Huzzah!
 
 See also: https://www.npmjs.com/package/grunt-elm

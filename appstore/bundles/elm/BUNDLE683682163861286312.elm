@@ -9,6 +9,9 @@ import Mouse
 import Signal exposing ((<~))
 import Window
 
+-- TODO: Keep the ports, but try and move all APP specific logic to the APP modules
+
+
 -- Import reset events from JS
 port reset : Signal ()
 
@@ -43,7 +46,7 @@ scene (w,h) locs =
   in
     layers
       [ collage w h (List.map drawPentagon locs)
-      , show "APP69fe..."
+      , show "BUNDLE683..."
       ]
 
 
