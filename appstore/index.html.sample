@@ -141,7 +141,10 @@
   	  <button onclick="resetApp('APPb34a8d71d12642c787cbddb242ea0c9c')">Reset</button>
   	</p>
   	<p>You have created <span id="APPb34a8d71d12642c787cbddb242ea0c9c-total-count">0</span> stamps in total.</p>
-	<div><!-- eof container -->
+  <div><!-- eof container -->
+  <div class="container">
+	<div id="BUNDLE683682163861286312" class="bundle"></div>  
+  <div><!-- eof container -->	  
 </div><!-- eof page -->
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -149,15 +152,22 @@
 <script type="text/javascript">
   // Show the app module in the "APP69fe31e2e8ac41d7bb1cc7aace3eb683" div.
   var divAPP69fe31e2e8ac41d7bb1cc7aace3eb683 = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683');
-  var APP69fe31e2e8ac41d7bb1cc7aace3eb683 = Elm.embed(Elm.APP69fe31e2e8ac41d7bb1cc7aace3eb683, divAPP69fe31e2e8ac41d7bb1cc7aace3eb683, { reset:[] });
+  /*var APP69fe31e2e8ac41d7bb1cc7aace3eb683 = Elm.embed(Elm.APP69fe31e2e8ac41d7bb1cc7aace3eb683, divAPP69fe31e2e8ac41d7bb1cc7aace3eb683, { reset:[] });*/
+  var APP69fe31e2e8ac41d7bb1cc7aace3eb683 = Elm.embed(Elm.APP69fe31e2e8ac41d7bb1cc7aace3eb683, divAPP69fe31e2e8ac41d7bb1cc7aace3eb683, {}); // reset has been moved to the bundle, not sure if this now works
 
   var divAPPb34a8d71d12642c787cbddb242ea0c9c = document.getElementById('APPb34a8d71d12642c787cbddb242ea0c9c');  
-  var APPb34a8d71d12642c787cbddb242ea0c9c = Elm.embed(Elm.APPb34a8d71d12642c787cbddb242ea0c9c, divAPPb34a8d71d12642c787cbddb242ea0c9c, { reset:[] });
+  /*var APPb34a8d71d12642c787cbddb242ea0c9c = Elm.embed(Elm.APPb34a8d71d12642c787cbddb242ea0c9c, divAPPb34a8d71d12642c787cbddb242ea0c9c, { reset:[] });*/
+  var APPb34a8d71d12642c787cbddb242ea0c9c = Elm.embed(Elm.APPb34a8d71d12642c787cbddb242ea0c9c, divAPPb34a8d71d12642c787cbddb242ea0c9c, {}); // reset has been moved to the bundle, not sure if this now works
+
+  var divBUNDLE683682163861286312 = document.getElementById('BUNDLE683682163861286312');
+  var BUNDLE683682163861286312 = Elm.embed(Elm.BUNDLE683682163861286312, divBUNDLE683682163861286312, { reset:[] });
 
   // Reset the app in the Elm code.
   // The value we send does not matter, we just
   // need the event.
   function resetApp(id) {
+	BUNDLE683682163861286312.ports.reset.send([]);
+	/*  
 	switch(id) {
 		case "APP69fe31e2e8ac41d7bb1cc7aace3eb683":
 			APP69fe31e2e8ac41d7bb1cc7aace3eb683.ports.reset.send([]);
@@ -168,9 +178,23 @@
 		default:
 			// do nothing
 	}
+	*/
   }
 
-  APP69fe31e2e8ac41d7bb1cc7aace3eb683.ports.count.subscribe(function(count) {
+  BUNDLE683682163861286312.ports.count.subscribe(function(count) {
+  	// Always show the latest count, which is exported
+  	// from the app module as the 'count' event stream.
+  	var currentCount = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683-current-count'),
+		  totalCount   = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683-total-count'),
+		  total        = total || 0;	  
+  	  currentCount.innerHTML = count;
+  	  if (count > 0) {
+  		  total += 1;
+  		  totalCount.innerHTML = total;
+  	  }
+  });
+
+/*  APP69fe31e2e8ac41d7bb1cc7aace3eb683.ports.count.subscribe(function(count) {
 	// Always show the latest count, which is exported
 	// from the app module as the 'count' event stream.
 	var currentCount = document.getElementById('APP69fe31e2e8ac41d7bb1cc7aace3eb683-current-count'),
@@ -181,9 +205,9 @@
 		  total += 1;
 		  totalCount.innerHTML = total;
 	  }
-  });
+  }); */
 
-  APPb34a8d71d12642c787cbddb242ea0c9c.ports.count.subscribe(function(count) {
+/*  APPb34a8d71d12642c787cbddb242ea0c9c.ports.count.subscribe(function(count) {
 	// Always show the latest count, which is exported
 	// from the app module as the 'count' event stream.
 	var currentCount = document.getElementById('APPb34a8d71d12642c787cbddb242ea0c9c-current-count'),
@@ -194,8 +218,7 @@
   	  total += 1;
   	  totalCount.innerHTML = total;
   	}
-  });
+}); */
 </script>
 
 </html>
-
