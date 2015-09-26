@@ -143,6 +143,11 @@
   	<p>You have created <span id="APPb34a8d71d12642c787cbddb242ea0c9c-total-count">0</span> stamps in total.</p>
   <div><!-- eof container -->
   <div class="container">
+	<h3>Bundle 6836...</h3>
+	  <p>There are currently <span id="BUNDLE683682163861286312-current-count">0</span> stamps.
+		<button onclick="resetApp('APPb34a8d71d12642c787cbddb242ea0c9c')">Reset</button>
+	  </p>
+	  <p>You have created <span id="BUNDLE683682163861286312-total-count">0</span> stamps in total.</p>  
 	<div id="BUNDLE683682163861286312" class="bundle"></div>  
   <div><!-- eof container -->	  
 </div><!-- eof page -->
