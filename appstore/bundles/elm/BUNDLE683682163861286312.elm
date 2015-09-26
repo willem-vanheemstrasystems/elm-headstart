@@ -11,10 +11,10 @@ import Window
 
 -- TODO: Keep the ports, but try and move all APP specific logic to the APP modules
 
+-- ACTIONS
 
--- Import reset events from JS
-port reset : Signal ()
 
+-- EVENTS
 
 -- Events can either be mouse clicks or reset events
 events : Signal (Maybe (Int,Int))
@@ -23,6 +23,28 @@ events =
     (Just <~ Signal.sampleOn Mouse.clicks Mouse.position)
     (always Nothing <~ reset)
 
+-- MAIN
+
+main =
+  Signal.map2 scene Window.dimensions clickLocations
+
+-- MODELS
+
+
+-- OPERATIONS
+
+
+-- PORTS
+
+-- Import reset events from JS
+port reset : Signal ()
+
+-- Export the number of stamps
+port count : Signal Int
+port count =
+  Signal.map List.length clickLocations
+
+-- SIGNALS
 
 -- Keep a list of stamps, resetting when appropriate
 clickLocations : Signal (List (Int,Int))
@@ -34,6 +56,7 @@ clickLocations =
   in
       Signal.foldp update [] events
 
+-- VIEWS
 
 -- Show the stamp list on screen
 scene : (Int, Int) -> List (Int, Int) -> Element
@@ -48,13 +71,3 @@ scene (w,h) locs =
       [ collage w h (List.map drawPentagon locs)
       , show "BUNDLE683..."
       ]
-
-
-main =
-  Signal.map2 scene Window.dimensions clickLocations
-
-
--- Export the number of stamps
-port count : Signal Int
-port count =
-  Signal.map List.length clickLocations
